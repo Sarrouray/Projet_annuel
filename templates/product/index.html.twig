@@ -1,0 +1,61 @@
+
+
+{% extends 'base.html.twig' %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/product.css') }}" />
+{% endblock %}
+
+{% block main_content %}
+
+    <div class="product-container">
+        <div class="product-images">
+            <div class="thumbnail-container">
+                
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>name</h1>
+            <p>description</p>
+            <p class="price">30 €</p>
+            <div class="product-options">
+                <div class="colors">
+                    <label for="colors">Couleurs:</label>
+                    <select id="colors">
+                        couleurs
+                    </select>
+                </div>
+                <div class="sizes">
+                    <label for="sizes">Tailles:</label>
+                    <select id="sizes">
+                        taille
+                    </select>
+                </div>
+            </div>
+            <div class="product-buttons">
+                <button class="add-to-cart">Ajouter au panier</button>
+                <button class="add-to-favorites">Ajouter aux favoris</button>
+            </div>
+            <div class="accordion">
+                <details>
+                    <summary>Description</summary>
+                    <p>descriiiiiiiiiiiiekfljrg</p>
+                </details>
+                <details>
+                    <summary>Paiement et livraison</summary>
+                    <p>paye biiiiiien</p>
+                </details>
+                <details>
+                    <summary>Retour</summary>
+                    <p>tkt on rend rien nous</p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

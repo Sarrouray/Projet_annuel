@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/accueil.css') }}" />
+{% endblock %}
+
+{% block main_content %}
+<section>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('assets/img/bann2.png') }}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('assets/img/bann3.png') }}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('assets/img/bann1.png') }}" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section>
+    <p class="titre_comm">Le podium des louanges par nos clients fidèles !</p>
+    <div class="row rcard">
+        <div id="comm" class="col-md-4 cardd1">
+            <div id="carrd" class="card card-b shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <img src="{{ asset('assets/img/not.png') }}" class="guill" alt="...">
+                <img src="{{ asset('assets/img/note.png') }}" class="note" alt="...">
+                <div class="card-body">
+                    <p class="card-text">J'adore cette boutique en ligne ! Les vêtements sont superbes et de grande qualité. Je reviendrai certainement pour mes prochains achats de vêtements tendance.</p>
+                    <h5 class="card-title">Rose Miller</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 cardd1">
+            <div id="carrd" class="card card-b shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <img src="{{ asset('assets/img/not.png') }}" class="guill" alt="...">
+                <img src="{{ asset('assets/img/note.png') }}" class="note" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Un grand coup de cœur pour cette boutique en ligne de vêtements. J'ai passé plusieurs commandes, et chaque fois, j'ai été impressionné par la qualité des produits et la facilité de navigation sur le site. Bravo !</p>
+                    <h5 class="card-title">Léa Dufresne</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 cardd1">
+            <div id="carrd" class="card card-b shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <img src="{{ asset('assets/img/not.png') }}" class="guill" alt="...">
+                <img src="{{ asset('assets/img/note.png') }}" class="note" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Je suis une cliente fidèle et je n'ai jamais été déçue. Les vêtements sont à la mode, les prix sont raisonnables, et le service client est excellent. C'est ma première destination pour toutes mes tenues préférées.</p>
+                    <h5 class="card-title">Océane Leroux</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="#" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <a href="mailto:sbenrhouma7@myges.fr">
+            <span class="mb-3 mb-md-0">© SAUVAGE Baptiste & BEN RHOUMA Sarah - B3</span>
+        </a>
+    </div>
+</footer>
+
+{% endblock %}
